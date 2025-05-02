@@ -41,13 +41,14 @@ function Signup() {
     <>
       <div className="flex h-screen items-center justify-center">
         <div className=" w-[600px] ">
-          <div className="modal-box">
-            <form onSubmit={handleSubmit(onSubmit)} method="dialog">
+          {/* <div className="modal-box"> */}
+      <div className="bg-gray-600 shadow-md relative rounded-lg p-6 w-full">
+            <form onSubmit={handleSubmit(onSubmit)} >
               {/* if there is a button in form, it will close the modal */}
               <Link
                 to="/"
                 className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
-              >
+                onClick={() => document.getElementById("my_modal_3").close()}     >
                 ✕
               </Link>
 
@@ -107,7 +108,7 @@ function Signup() {
                 <button className="bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200">
                   Signup
                 </button>
-                <p className="text-xl">
+                <div className="text-xl">
                   Have account?{" "}
                   <button
                     className="underline text-blue-500 cursor-pointer"
@@ -117,13 +118,13 @@ function Signup() {
                   >
                     Login
                   </button>{" "}
-                  <Login />
-                </p>
+                </div>
               </div>
             </form>
           </div>
         </div>
       </div>
+      <Login />
     </>
   );
 }

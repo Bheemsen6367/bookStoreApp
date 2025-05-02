@@ -1,0 +1,48 @@
+[
+    {
+      "_id": {"$oid": "661e9c7fdc1f1c1234567890"},
+      "id": 1,
+      "name": "J.K. Rowling",
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "price": 499,
+      "category": "Fantasy",
+      "image": "https://example.com/images/harrypotter1.jpg"
+    },
+    {
+      "_id": {"$oid": "661e9c7fdc1f1c1234567891"},
+      "id": 2,
+      "name": "George R.R. Martin",
+      "title": "A Game of Thrones",
+      "price": 699,
+      "category": "Fantasy",
+      "image": "https://example.com/images/got1.jpg"
+    },
+    {
+      "_id": {"$oid": "661e9c7fdc1f1c1234567892"},
+      "id": 3,
+      "name": "Harper Lee",
+      "title": "To Kill a Mockingbird",
+      "price": 399,
+      "category": "Classic",
+      "image": "https://example.com/images/mockingbird.jpg"
+    },
+    {
+      "_id": {"$oid": "661e9c7fdc1f1c1234567893"},
+      "id": 4,
+      "name": "Dan Brown",
+      "title": "The Da Vinci Code",
+      "price": 599,
+      "category": "Thriller",
+      "image": "https://example.com/images/davinci.jpg"
+    },
+    {
+      "_id": {"$oid": "661e9c7fdc1f1c1234567894"},
+      "id": 5,
+      "name": "Paulo Coelho",
+      "title": "The Alchemist",
+      "price": 299,
+      "category": "Philosophy",
+      "image": "https://example.com/images/alchemist.jpg"
+    }
+  ]
+  

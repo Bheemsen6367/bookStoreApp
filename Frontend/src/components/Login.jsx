@@ -9,7 +9,7 @@ function Login() {
     handleSubmit,
     formState: { errors },
   } = useForm();
-
+ 
   const onSubmit = async (data) => {
     const userInfo = {
       email: data.email,
@@ -23,8 +23,8 @@ function Login() {
           toast.success("Loggedin Successfully");
           document.getElementById("my_modal_3").close();
           setTimeout(() => {
-            window.location.reload();
             localStorage.setItem("Users", JSON.stringify(res.data.user));
+            window.location.reload();
           }, 1000);
         }
       })
@@ -40,7 +40,7 @@ function Login() {
     <div>
       <dialog id="my_modal_3" className="modal">
         <div className="modal-box">
-          <form onSubmit={handleSubmit(onSubmit)} method="dialog">
+          <form onSubmit={handleSubmit(onSubmit)} >
             {/* if there is a button in form, it will close the modal */}
             <Link
               to="/"
@@ -91,7 +91,7 @@ function Login() {
               <button className="bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200">
                 Login
               </button>
-              <p>
+              <div>
                 Not registered?{" "}
                 <Link
                   to="/signup"
@@ -99,7 +99,7 @@ function Login() {
                 >
                   Signup
                 </Link>{" "}
-              </p>
+              </div>
             </div>
           </form>
         </div>

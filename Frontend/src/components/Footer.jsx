@@ -2,18 +2,20 @@ import React from "react";
 
 function Footer() {
   return (
-    <div>
+    <div className=" ">
       <hr />
       <footer className="footer footer-center p-10 text-base-content rounded dark:bg-slate-900 dark:text-white">
-        <nav className="grid grid-flow-col gap-4">
-          <a className="link link-hover">About us</a>
+      <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between">
+
+      <nav className="grid grid-cols-2 md:grid-flow-col gap-4">
+      <a className="link link-hover">About us</a>
           <a className="link link-hover">Contact</a>
           <a className="link link-hover">Jobs</a>
           <a className="link link-hover">Press kit</a>
         </nav>
         <nav>
-          <div className="grid grid-flow-col gap-4">
-            <a>
+        <div className="grid grid-flow-col gap-4  p-3 flex-wrap justify-center">
+        <a>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -51,6 +53,7 @@ function Footer() {
         <aside>
           <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
         </aside>
+        </div>
       </footer>
     </div>
   );
